@@ -77,25 +77,25 @@ normalizeCss
     cursor: 'pointer'
   .add ['button[disabled]', 'html input[disabled]'],
     cursor: 'default'
-  .add ['button::-moz-focus-inner', 'input::-moz-focus-inner'],
-    border: 0
-    padding: 0
+  #.add ['button::-moz-focus-inner', 'input::-moz-focus-inner'],
+  #  border: 0
+  #  padding: 0
   .add 'input',
     lineHeight: 'normal'
   .add ['input[type="checkbox"]', 'input[type="radio"]'],
     boxSizing: 'border-box'
     padding: 0
-  .add ['input[type="number"]::-webkit-inner-spin-button'
-    'input[type="number"]::-webkit-outer-spin-button'],
-    height: 'auto'
+  #.add ['input[type="number"]::-webkit-inner-spin-button'
+  #  'input[type="number"]::-webkit-outer-spin-button'],
+  #  height: 'auto'
   .add 'input[type="search"]',
     webkitAppearance: 'textfield'
     mozBoxSizing: 'content-box'
     webkitBoxSizing: 'content-box'
     boxSizing: 'content-box'
-  .add ['input[type="search"]::-webkit-search-cancel-button'
-    'input[type="search"]::-webkit-search-decoration'],
-    webkitAppearance: 'none'
+  #.add ['input[type="search"]::-webkit-search-cancel-button'
+  #  'input[type="search"]::-webkit-search-decoration'],
+  #  webkitAppearance: 'none'
   .add 'fieldset',
     border: "#{CSSC.px 1} solid #c0c0c0"
     margin: "0 #{CSSC.px 2}"
@@ -106,7 +106,7 @@ normalizeCss
   .add 'textarea',
     overflow: 'auto'
   .add 'optgroup',
-    font-weight: 'bold'
+    fontWeight: 'bold'
   .add 'table',
     borderCollapse: 'collapse'
     borderSpacing: 0
